@@ -4,13 +4,14 @@ internos*/
 
 let A=[[3,4,5,6],[7,8,9]];
 
-const datosArreglo=()=>{
-    A.map((datos)=>{
-        datos.map((valores,i)=>{
+const datosArreglo = () => {
+    A.map((datos) => {
+        datos.map((valores,i) => {
             console.log(`${i}=${valores}`);
         })
     });
 }
+datosAreglos();
 
 //for of
 let B = [[3,4,5,6],[7,8,9]];
@@ -24,12 +25,12 @@ for (let fil of B) {
 //for in
 let comparar = [[3,4,5,6],[7,8,9]];
 
-for (let fil of c) {
+for (let fil of comparar) {
     for (let [i, val] of fil.entries()) {
         console.log(`${i}=${val}`);
     }
 }
-const datosarreglo = (aray) => {
+const datosarreglo = (array) => {
     for (const datosindex in array) {
         for (const valoresindex in array[datosindex]){
             console.log(`${valoresindex}=${array[datosindex][valoresindex]}`);
@@ -37,7 +38,7 @@ const datosarreglo = (aray) => {
     }
 }
 
-datosarreglo(c);
+datosarreglo(comparar);
 //for each
 let arreglointerno2dimensiones=[];
 
@@ -70,7 +71,7 @@ console.log("Cliclo while");
 
 let i = 0;
 
-while (i < B.length) {
+while (i < b.length) {
     let v = b[i];
     let j = 0;
 
@@ -79,7 +80,7 @@ while (i < B.length) {
         j++;
     }
     1++;
-};
+}
 //Estructura de control parser
 let a=4;
 let b=5;
